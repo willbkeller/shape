@@ -1,6 +1,6 @@
 package edu.jalc.shape;
 
-public class RightTriangle extends Shape{
+public class RightTriangle extends TwoDimensionalShape{
 
    private double base;
    private double height;

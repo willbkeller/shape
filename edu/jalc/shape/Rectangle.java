@@ -1,6 +1,6 @@
 package edu.jalc.shape;
 
-public class Rectangle extends Shape{
+public class Rectangle extends TwoDimensionalShape{
 
    private double height;
    private double base;
@@ -16,12 +16,12 @@ public class Rectangle extends Shape{
    }
 
    public double getArea(){
-      double area = this.base * this.height;
+      double area = base * height;
       return area;
    }
 
    public double getPerimeter(){
-      double perimeter = (2*this.base) + (2*this.height);
+      double perimeter = (2 * base) + (2 * height);
       return perimeter;
    }
 
