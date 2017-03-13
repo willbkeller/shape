@@ -4,18 +4,15 @@ public class RightTriangle extends TwoDimensionalShape{
 
    private double base;
    private double height;
-   private double hypotenuse;
 
    private RightTriangle(){
       this.base = 0;
       this.height = 0;
-      this.hypotenuse = 0;
    }
 
-   public RightTriangle(double base, double height, double hypotenuse){
+   public RightTriangle(double base, double height){
       this.base = height;
       this.height = base;
-      this.hypotenuse = hypotenuse;
    }
 
    public double getArea(){
@@ -24,7 +21,7 @@ public class RightTriangle extends TwoDimensionalShape{
    }
 
    public double getPerimeter(){
-      double perimeter = this.base + this.height + this.hypotenuse;
+      double perimeter = this.base + this.height + Math.hypot(this.base, this.height);
       return perimeter;
    }
 
