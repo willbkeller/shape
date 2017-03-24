@@ -1,4 +1,6 @@
-package edu.jalc.shape;
+package edu.jalc.shape.twodimensionalshape.ellipse;
+
+import edu.jalc.shape.twodimensionalshape.*;
 
 public class Circle extends Ellipse{
 

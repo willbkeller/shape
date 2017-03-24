@@ -1,4 +1,6 @@
-package edu.jalc.shape;
+package edu.jalc.shape.twodimensionalshape.edgedshape;
+
+import edu.jalc.shape.twodimensionalshape.*;
 
 public class Square extends Rectangle{
 
@@ -9,6 +11,7 @@ public class Square extends Rectangle{
    public Square(double side){
       super(side, side);
    }
+   
 
    public String toString(){
       return "Square:\nArea = " + getArea() + "\nPerimeter = " + getPerimeter();

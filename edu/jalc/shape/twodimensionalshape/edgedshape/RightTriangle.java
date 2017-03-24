@@ -1,6 +1,8 @@
-package edu.jalc.shape;
+package edu.jalc.shape.twodimensionalshape.edgedshape;
 
-public class RightTriangle extends TwoDimensionalShape{
+import edu.jalc.shape.twodimensionalshape.*;
+
+public class RightTriangle extends EdgedShape{
 
    private double base;
    private double height;
