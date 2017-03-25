@@ -13,6 +13,8 @@ public class Rectangle extends EdgedShape{
 
    public Rectangle(double height, double width){
       super(height,width);
+      this.height = height;
+      this.width = width;
    }
 
    public String toString(){
