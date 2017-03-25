@@ -12,7 +12,6 @@ public class Square extends Rectangle{
       super(side, side);
    }
    
-
    public String toString(){
       return "Square:\nArea = " + getArea() + "\nPerimeter = " + getPerimeter();
    }

@@ -22,12 +22,12 @@ public class Ellipse extends TwoDimensionalShape{
     return area;
   }
 
-  public double getPerimeter(){
-    double perimeter = 2 * Math.PI *(Math.sqrt((Math.pow(majorAxis, 2) + Math.pow(minorAxis, 2))/2));
-    return perimeter;
+  public double getCircumference(){
+    double circumference = 2 * Math.PI *(Math.sqrt((Math.pow(majorAxis, 2) + Math.pow(minorAxis, 2))/2));
+    return circumference;
 
   }
   public String toString(){
-    return "Ellipse:\nArea = " + getArea() + "\nPerimeter = " + getPerimeter();
+    return "Ellipse:\nArea = " + getArea() + "\nCircumference = " + getCircumference();
   }
 }

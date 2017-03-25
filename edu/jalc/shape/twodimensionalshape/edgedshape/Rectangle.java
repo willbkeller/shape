@@ -5,26 +5,14 @@ import edu.jalc.shape.twodimensionalshape.*;
 public class Rectangle extends EdgedShape{
 
    private double height;
-   private double base;
+   private double width;
 
    private Rectangle(){
-      this.height = 0;
-      this.base = 0;
+      super(0,0);
    }
 
-   public Rectangle(double height, double base){
-      this.height = height;
-      this.base = base;
-   }
-
-   public double getArea(){
-      double area = base * height;
-      return area;
-   }
-
-   public double getPerimeter(){
-      double perimeter = (2 * base) + (2 * height);
-      return perimeter;
+   public Rectangle(double height, double width){
+      super(height,width);
    }
 
    public String toString(){

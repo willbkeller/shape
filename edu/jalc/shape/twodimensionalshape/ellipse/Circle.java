@@ -15,12 +15,12 @@ public class Circle extends Ellipse{
     this.radius = radius;
   }
 
-  public double getPerimeter(){
-    double perimeter = 2 * Math.PI * (radius);
-    return perimeter;
+  public double getCircumference(){
+    double circumference = 2 * Math.PI * (radius);
+    return circumference;
   }
 
   public String toString(){
-    return "Circle:\nArea = " + getArea() + "\nPerimeter = " + getPerimeter();
+    return "Circle:\nArea = " + getArea() + "\nCircumference = " + getCircumference();
   }
 }

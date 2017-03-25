@@ -4,26 +4,26 @@ import edu.jalc.shape.twodimensionalshape.*;
 
 public class RightTriangle extends EdgedShape{
 
-   private double base;
+   private double width;
    private double height;
 
    private RightTriangle(){
-      this.base = 0;
-      this.height = 0;
+      super(0,0);
    }
 
-   public RightTriangle(double base, double height){
-      this.base = height;
-      this.height = base;
+   public RightTriangle(double width, double height){
+      super(width, height);
+      this.width = width;
+      this.height = height;
    }
 
    public double getArea(){
-      double area = (this.base * this.height)/2;
+      double area = (this.width * this.height)/2;
       return area;
    }
 
    public double getPerimeter(){
-      double perimeter = this.base + this.height + Math.hypot(this.base, this.height);
+      double perimeter = this.width + this.height + Math.hypot(this.width, this.height);
       return perimeter;
    }
 
